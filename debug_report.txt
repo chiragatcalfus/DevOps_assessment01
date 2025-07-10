@@ -1,0 +1,3 @@
+it shows that the file is not implemented correctly.
+check for other patterns than *.tmp
+df run on wrong mount point 

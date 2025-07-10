@@ -1,0 +1,15 @@
+Setup the disk usage policy
+Close backgroud app and scan antivirus in disk
+
+Delete the temp file older than 7 days with 'sudo find /tmp -type f -atime +7 -delete'
+
+Old Gzipped logs can be deleted with 'sudo find /var/log -typr f -name "*.gz" -delete
+Check then the kernel logs with 'sudo cat /var/log/kern.log.1'
+if nothing imp, delete the with 'sudo rm /var/log/kern.log.1
+Then restart the system 
+
+Also Check logrotate with cmd ' sudo cat /etc/cron.daily/logrotate'
+Its function is to ensure the success timely deletion of logs so that the system does not get bunched up.
+Then at last check for the tiny files and hidden folders
+
+The user doing the memeory intensive process can be verified with the top or htop cmd, tools like glances and nmon can be used for more info
